@@ -1,0 +1,25 @@
+{
+  "bin": {
+    "russian-roulette": "bin/russian-roulette.js"
+  },
+  "name": "russian-roulette",
+  "version": "0.0.1",
+  "description": "Russian roulette on your command line",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterjuras/russian-roulette.git"
+  },
+  "keywords": [
+    "russian",
+    "roulette"
+  ],
+  "author": "Peter Juras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterjuras/russian-roulette/issues"
+  },
+  "homepage": "https://github.com/peterjuras/russian-roulette#readme",
+  "dependencies": {
+    "rimraf": "^2.5.2"
+  }
+}
