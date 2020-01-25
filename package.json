@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/peterjuras/russian-roulette.git"
   },
+  "engines": {
+    "node": ">8"
+  },
   "keywords": [
     "russian",
     "roulette"
@@ -20,6 +23,6 @@
   },
   "homepage": "https://github.com/peterjuras/russian-roulette#readme",
   "dependencies": {
-    "rimraf": "^2.5.2"
+    "rimraf": "^3.0.0"
   }
 }

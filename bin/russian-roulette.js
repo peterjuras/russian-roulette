@@ -1,11 +1,23 @@
 #! /usr/bin/env node
-var random = Math.floor(Math.random() * 7);
+const { promisify } = require("util");
+const rimraf = require("rimraf");
 
-if (random === 0) {
-  var rimraf = require('rimraf');
-  rimraf('*', function() {
-    console.log('*BANG*');
+const rimrafAsync = promisify(rimraf);
+
+async function main() {
+  const random = Math.floor(Math.random() * 7);
+
+  if (random === 0) {
+    await rimrafAsync("*");
+    console.log("*BANG*");
+  } else {
+    console.log("*Click*");
+  }
+}
+
+if (require.main === module) {
+  main().catch(error => {
+    console.error(error);
+    process.exit(1);
   });
-} else {
-  console.log('*Click*');
 }
