@@ -3,7 +3,7 @@
     "russian-roulette": "bin/russian-roulette.js"
   },
   "name": "russian-roulette",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Russian roulette on your command line",
   "repository": {
     "type": "git",
