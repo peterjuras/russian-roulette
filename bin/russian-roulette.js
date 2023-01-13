@@ -1,13 +1,10 @@
 #! /usr/bin/env node
-import { promisify } from "node:util";
-import rimraf from "rimraf";
-
-const rimrafAsync = promisify(rimraf);
+import { removeEverythingInCurrentFolder } from "../src/remove-everything-in-current-folder.js";
 
 const random = Math.floor(Math.random() * 7);
 
 if (random === 0) {
-  await rimrafAsync("*");
+  await removeEverythingInCurrentFolder();
   console.log("*BANG*");
 } else {
   console.log("*Click*");

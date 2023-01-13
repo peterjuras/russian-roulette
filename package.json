@@ -22,8 +22,5 @@
     "url": "https://github.com/peterjuras/russian-roulette/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/peterjuras/russian-roulette#readme",
-  "dependencies": {
-    "rimraf": "^3.0.0"
-  }
+  "homepage": "https://github.com/peterjuras/russian-roulette#readme"
 }
